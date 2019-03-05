@@ -71,22 +71,20 @@ void xpt2046_init(void)
  */
 bool xpt2046_read(lv_indev_data_t* data)
 {
-    uint16_t x = 0;
-    uint16_t y = 0;
+    static uint16_t last_x = 0;
+    static uint16_t last_y = 0;
     uint8_t irq = LV_DRV_INDEV_IRQ_READ;
 
     if (irq == 0) {
-        XPT2046_GetTouch_XY(&x, &y, 1);
-        xpt2046_corr(&x, &y);
+        XPT2046_GetTouch_XY(&last_x, &last_y, 1);
+        xpt2046_corr(&last_x, &last_y);
         // xpt2046_avg(&x, &y);
-
-        data->point.x = x;
-        data->point.y = y;
         data->state = LV_INDEV_STATE_PR;
     }
     else
         data->state = LV_INDEV_STATE_REL;
-   // printf("X=%d  Y= %d  m_sec=%d count=%d\n\r", x, y, millis(), count);
+    data->point.x = last_x;
+    data->point.y = last_y;
     return false;
 }
 
