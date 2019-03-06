@@ -56,7 +56,7 @@ int main()
     for (;;) {
         delay_ms(10);
         lv_task_handler();
-       
+        lv_tick_inc(10);
     }
 }
 

@@ -1,6 +1,6 @@
 #include "core.h"
 //#include "cmsis_os.h"                   // CMSIS RTOS header file
-#include "delay.h"
+#include "../misc/delay.h"
 
 
 static u16 screen_width  = ILI9341_PIXEL_WIDTH,
