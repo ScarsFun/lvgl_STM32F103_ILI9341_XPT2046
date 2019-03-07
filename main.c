@@ -1,4 +1,30 @@
-
+/*----------------------------------------------------------------------------
+ *       Simple STM32F103 Demo, using littleVgl:                             *
+ *       Custom STM32F103RC breakout Board (72Mhz, 64K ram, 256K Flash) .    * 
+ *       SPL (STM32 Standard Peripheral Libraries).
+ *       ILI9341 display over SPI with DMA,                                  *
+ *       XPT2046 resistive touch panel                                       * 
+ *                                                                           * 
+ *       ILI9341 SPI1 CONNECTIONS:                                           *
+ *       -------------------------------                                     * 
+ *       TFT_RESET                   PA2                                     * 
+ *       TFT_DC                      PA3                                     * 
+ *       TFT_CS                      PA4                                     * 
+ *       TFT_SCK                     PA5                                     * 
+ *       TFT_MISO                    PA6                                     * 
+ *       TFT_MOSI                    PA7                                     * 
+ *                                                                           * 
+ *       XPT2046 SPI2 CONNECTIONS:                                           *
+ *       --------------------------------                                    * 
+ *       TOUCH_CLK                   PB13                                    * 
+ *       TOUCH_DIN (MOSI)            PB15                                    *
+ *       TOUCH_DO (MISO)             PB14                                    *
+ *       TOUCH_CS                    PB1                                     *             
+ *       TOUCH_IRQ                   PB7                                     * 
+ *                                                                           * 
+ *                                                                           * 
+ *                                                                           * 
+ *---------------------------------------------------------------------------*/
 
 #include "stm32f10x.h"
 #include "lvgl/lvgl.h"
@@ -6,33 +32,8 @@
 #include "ili9341/lv_driver.h"
 #include "misc/delay.h"
 #include "XPT2046/XPT2046.h"
+#include "demo/demo.h"
 
-static lv_res_t list_btn_action(lv_obj_t* btn);
-static lv_res_t btn_click_action(lv_obj_t* btn);
-
-static lv_obj_t* list1;
-static lv_obj_t* label1;
-static lv_obj_t* btn1;
-static lv_obj_t* label1;
-
-void lv_test_list_1(void)
-{
-    list1 = lv_list_create(lv_scr_act(), NULL);
-    lv_obj_set_pos(list1, 10, 10);
-    lv_list_add(list1, SYMBOL_FILE, "File", list_btn_action);
-    lv_list_add(list1, SYMBOL_DIRECTORY, "Directory", list_btn_action);
-    lv_list_add(list1, SYMBOL_WIFI, "WiFi", list_btn_action);
-
-    btn1 = lv_btn_create(lv_scr_act(), NULL);
-    lv_obj_set_pos(btn1, 220, 10);
-    label1 = lv_label_create(btn1, NULL);
-    lv_label_set_text(label1, "OK");
-    lv_btn_set_action(btn1, LV_BTN_ACTION_CLICK, btn_click_action);
-
-    label1 = lv_label_create(lv_scr_act(), NULL);
-    lv_label_set_text(label1, "Title Label");
-    lv_obj_set_pos(label1, 10, 215);
-}
 
 int main()
 {
@@ -51,24 +52,11 @@ int main()
     indev_drv.read = xpt2046_read;
     lv_indev_drv_register(&indev_drv);
 
-    lv_test_list_1();
+    demo_create();
 
     for (;;) {
         delay_ms(10);
         lv_task_handler();
         lv_tick_inc(10);
     }
-}
-
-//******** PROGRAM NEVER REACH THIS FUNCTION *******
-static lv_res_t list_btn_action(lv_obj_t* btn)
-{
-    lv_label_set_text(label1, lv_list_get_btn_text(btn));
-    return LV_RES_OK;
-}
-
-static lv_res_t btn_click_action(lv_obj_t* btn)
-{
-    lv_label_set_text(label1, "OK");
-    return LV_RES_OK;
 }

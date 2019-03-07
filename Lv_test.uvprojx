@@ -386,6 +386,11 @@
               <FileType>1</FileType>
               <FilePath>.\main.c</FilePath>
             </File>
+            <File>
+              <FileName>demo.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\demo\demo.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
