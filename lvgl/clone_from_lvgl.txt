@@ -1,2 +1,0 @@
-clone from littlevgl repository.
-tested with V5.3
