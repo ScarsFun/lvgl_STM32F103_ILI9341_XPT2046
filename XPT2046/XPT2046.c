@@ -39,7 +39,7 @@ static void xpt2046_avg(uint16_t * x, uint16_t * y);
 int16_t avg_buf_x[XPT2046_AVG];
 int16_t avg_buf_y[XPT2046_AVG];
 uint8_t avg_last;
-
+static uint16_t count=0;
 
 /**********************
  *      MACROS
@@ -67,24 +67,28 @@ void xpt2046_init(void)
 /**
  * Get the current position and state of the touchpad
  * @param data store the read data here
- * @return false: because no more data to be read
+ * @return false: because no ore data to be read
  */
-bool xpt2046_read(lv_indev_data_t* data)
+bool xpt2046_read(lv_indev_drv_t * drv, lv_indev_data_t*data)
 {
     static uint16_t last_x = 0;
     static uint16_t last_y = 0;
+    uint16_t x = 0;
+    uint16_t y = 0;
     uint8_t irq = LV_DRV_INDEV_IRQ_READ;
 
     if (irq == 0) {
-        XPT2046_GetTouch_XY(&last_x, &last_y, 1);
-        xpt2046_corr(&last_x, &last_y);
+        XPT2046_GetTouch_XY(&x, &y, 1);
+        xpt2046_corr(&x, &y);
         // xpt2046_avg(&x, &y);
+
+        data->point.x = x;
+        data->point.y = y;
         data->state = LV_INDEV_STATE_PR;
     }
     else
         data->state = LV_INDEV_STATE_REL;
-    data->point.x = last_x;
-    data->point.y = last_y;
+   // printf("X=%d  Y= %d  m_sec=%d count=%d\n\r", x, y, millis(), count);
     return false;
 }
 

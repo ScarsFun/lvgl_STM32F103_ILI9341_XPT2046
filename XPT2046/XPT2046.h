@@ -23,7 +23,7 @@ extern "C" {
 
 #include <stdint.h>
 #include <stdbool.h>
-#include "../lvgl/lv_hal/lv_hal_indev.h"
+#include "../lvgl/src/lv_hal/lv_hal_indev.h"
 
 /*********************
  *      DEFINES
@@ -37,8 +37,7 @@ extern "C" {
  * GLOBAL PROTOTYPES
  **********************/
 void xpt2046_init(void);
-bool xpt2046_read(lv_indev_data_t * data);
-
+bool xpt2046_read(lv_indev_drv_t * drv, lv_indev_data_t*data);
 /**********************
  *      MACROS
  **********************/

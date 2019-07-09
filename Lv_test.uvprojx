@@ -327,8 +327,8 @@
             <uC99>1</uC99>
             <uGnu>1</uGnu>
             <useXO>0</useXO>
-            <v6Lang>1</v6Lang>
-            <v6LangP>1</v6LangP>
+            <v6Lang>3</v6Lang>
+            <v6LangP>3</v6LangP>
             <vShortEn>1</vShortEn>
             <vShortWch>1</vShortWch>
             <v6Lto>0</v6Lto>
@@ -433,469 +433,409 @@
           <GroupName>lvgl</GroupName>
           <Files>
             <File>
+              <FileName>lv_disp.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\lvgl\src\lv_core\lv_disp.c</FilePath>
+            </File>
+            <File>
               <FileName>lv_group.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\lvgl\lv_core\lv_group.c</FilePath>
+              <FilePath>.\lvgl\src\lv_core\lv_group.c</FilePath>
             </File>
             <File>
               <FileName>lv_indev.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\lvgl\lv_core\lv_indev.c</FilePath>
-            </File>
-            <File>
-              <FileName>lv_lang.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\lvgl\lv_core\lv_lang.c</FilePath>
+              <FilePath>.\lvgl\src\lv_core\lv_indev.c</FilePath>
             </File>
             <File>
               <FileName>lv_obj.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\lvgl\lv_core\lv_obj.c</FilePath>
+              <FilePath>.\lvgl\src\lv_core\lv_obj.c</FilePath>
             </File>
             <File>
               <FileName>lv_refr.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\lvgl\lv_core\lv_refr.c</FilePath>
+              <FilePath>.\lvgl\src\lv_core\lv_refr.c</FilePath>
             </File>
             <File>
               <FileName>lv_style.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\lvgl\lv_core\lv_style.c</FilePath>
-            </File>
-            <File>
-              <FileName>lv_vdb.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\lvgl\lv_core\lv_vdb.c</FilePath>
+              <FilePath>.\lvgl\src\lv_core\lv_style.c</FilePath>
             </File>
             <File>
               <FileName>lv_draw.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\lvgl\lv_draw\lv_draw.c</FilePath>
+              <FilePath>.\lvgl\src\lv_draw\lv_draw.c</FilePath>
             </File>
             <File>
               <FileName>lv_draw_arc.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\lvgl\lv_draw\lv_draw_arc.c</FilePath>
+              <FilePath>.\lvgl\src\lv_draw\lv_draw_arc.c</FilePath>
+            </File>
+            <File>
+              <FileName>lv_draw_basic.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\lvgl\src\lv_draw\lv_draw_basic.c</FilePath>
             </File>
             <File>
               <FileName>lv_draw_img.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\lvgl\lv_draw\lv_draw_img.c</FilePath>
+              <FilePath>.\lvgl\src\lv_draw\lv_draw_img.c</FilePath>
             </File>
             <File>
               <FileName>lv_draw_label.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\lvgl\lv_draw\lv_draw_label.c</FilePath>
+              <FilePath>.\lvgl\src\lv_draw\lv_draw_label.c</FilePath>
             </File>
             <File>
               <FileName>lv_draw_line.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\lvgl\lv_draw\lv_draw_line.c</FilePath>
-            </File>
-            <File>
-              <FileName>lv_draw_rbasic.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\lvgl\lv_draw\lv_draw_rbasic.c</FilePath>
+              <FilePath>.\lvgl\src\lv_draw\lv_draw_line.c</FilePath>
             </File>
             <File>
               <FileName>lv_draw_rect.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\lvgl\lv_draw\lv_draw_rect.c</FilePath>
+              <FilePath>.\lvgl\src\lv_draw\lv_draw_rect.c</FilePath>
             </File>
             <File>
               <FileName>lv_draw_triangle.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\lvgl\lv_draw\lv_draw_triangle.c</FilePath>
+              <FilePath>.\lvgl\src\lv_draw\lv_draw_triangle.c</FilePath>
             </File>
             <File>
-              <FileName>lv_draw_vbasic.c</FileName>
+              <FileName>lv_img_cache.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\lvgl\lv_draw\lv_draw_vbasic.c</FilePath>
+              <FilePath>.\lvgl\src\lv_draw\lv_img_cache.c</FilePath>
             </File>
             <File>
-              <FileName>lv_font_builtin.c</FileName>
+              <FileName>lv_img_decoder.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\lvgl\lv_fonts\lv_font_builtin.c</FilePath>
-            </File>
-            <File>
-              <FileName>lv_font_dejavu_10.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\lvgl\lv_fonts\lv_font_dejavu_10.c</FilePath>
-            </File>
-            <File>
-              <FileName>lv_font_dejavu_10_cyrillic.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\lvgl\lv_fonts\lv_font_dejavu_10_cyrillic.c</FilePath>
-            </File>
-            <File>
-              <FileName>lv_font_dejavu_10_latin_sup.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\lvgl\lv_fonts\lv_font_dejavu_10_latin_sup.c</FilePath>
-            </File>
-            <File>
-              <FileName>lv_font_dejavu_20.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\lvgl\lv_fonts\lv_font_dejavu_20.c</FilePath>
-            </File>
-            <File>
-              <FileName>lv_font_dejavu_20_cyrillic.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\lvgl\lv_fonts\lv_font_dejavu_20_cyrillic.c</FilePath>
-            </File>
-            <File>
-              <FileName>lv_font_dejavu_20_latin_sup.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\lvgl\lv_fonts\lv_font_dejavu_20_latin_sup.c</FilePath>
-            </File>
-            <File>
-              <FileName>lv_font_dejavu_30.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\lvgl\lv_fonts\lv_font_dejavu_30.c</FilePath>
-            </File>
-            <File>
-              <FileName>lv_font_dejavu_30_cyrillic.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\lvgl\lv_fonts\lv_font_dejavu_30_cyrillic.c</FilePath>
-            </File>
-            <File>
-              <FileName>lv_font_dejavu_30_latin_sup.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\lvgl\lv_fonts\lv_font_dejavu_30_latin_sup.c</FilePath>
-            </File>
-            <File>
-              <FileName>lv_font_dejavu_40.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\lvgl\lv_fonts\lv_font_dejavu_40.c</FilePath>
-            </File>
-            <File>
-              <FileName>lv_font_dejavu_40_cyrillic.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\lvgl\lv_fonts\lv_font_dejavu_40_cyrillic.c</FilePath>
-            </File>
-            <File>
-              <FileName>lv_font_dejavu_40_latin_sup.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\lvgl\lv_fonts\lv_font_dejavu_40_latin_sup.c</FilePath>
-            </File>
-            <File>
-              <FileName>lv_font_monospace_8.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\lvgl\lv_fonts\lv_font_monospace_8.c</FilePath>
-            </File>
-            <File>
-              <FileName>lv_font_symbol_10.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\lvgl\lv_fonts\lv_font_symbol_10.c</FilePath>
-            </File>
-            <File>
-              <FileName>lv_font_symbol_20.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\lvgl\lv_fonts\lv_font_symbol_20.c</FilePath>
-            </File>
-            <File>
-              <FileName>lv_font_symbol_30.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\lvgl\lv_fonts\lv_font_symbol_30.c</FilePath>
-            </File>
-            <File>
-              <FileName>lv_font_symbol_40.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\lvgl\lv_fonts\lv_font_symbol_40.c</FilePath>
-            </File>
-            <File>
-              <FileName>lv_hal_disp.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\lvgl\lv_hal\lv_hal_disp.c</FilePath>
-            </File>
-            <File>
-              <FileName>lv_hal_indev.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\lvgl\lv_hal\lv_hal_indev.c</FilePath>
-            </File>
-            <File>
-              <FileName>lv_hal_tick.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\lvgl\lv_hal\lv_hal_tick.c</FilePath>
-            </File>
-            <File>
-              <FileName>lv_anim.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\lvgl\lv_misc\lv_anim.c</FilePath>
-            </File>
-            <File>
-              <FileName>lv_area.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\lvgl\lv_misc\lv_area.c</FilePath>
-            </File>
-            <File>
-              <FileName>lv_circ.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\lvgl\lv_misc\lv_circ.c</FilePath>
-            </File>
-            <File>
-              <FileName>lv_color.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\lvgl\lv_misc\lv_color.c</FilePath>
+              <FilePath>.\lvgl\src\lv_draw\lv_img_decoder.c</FilePath>
             </File>
             <File>
               <FileName>lv_font.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\lvgl\lv_misc\lv_font.c</FilePath>
+              <FilePath>.\lvgl\src\lv_font\lv_font.c</FilePath>
+            </File>
+            <File>
+              <FileName>lv_font_fmt_txt.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\lvgl\src\lv_font\lv_font_fmt_txt.c</FilePath>
+            </File>
+            <File>
+              <FileName>lv_font_roboto_12.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\lvgl\src\lv_font\lv_font_roboto_12.c</FilePath>
+            </File>
+            <File>
+              <FileName>lv_font_roboto_16.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\lvgl\src\lv_font\lv_font_roboto_16.c</FilePath>
+            </File>
+            <File>
+              <FileName>lv_font_roboto_22.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\lvgl\src\lv_font\lv_font_roboto_22.c</FilePath>
+            </File>
+            <File>
+              <FileName>lv_font_roboto_28.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\lvgl\src\lv_font\lv_font_roboto_28.c</FilePath>
+            </File>
+            <File>
+              <FileName>lv_font_unscii_8.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\lvgl\src\lv_font\lv_font_unscii_8.c</FilePath>
+            </File>
+            <File>
+              <FileName>lv_hal_disp.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\lvgl\src\lv_hal\lv_hal_disp.c</FilePath>
+            </File>
+            <File>
+              <FileName>lv_hal_indev.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\lvgl\src\lv_hal\lv_hal_indev.c</FilePath>
+            </File>
+            <File>
+              <FileName>lv_hal_tick.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\lvgl\src\lv_hal\lv_hal_tick.c</FilePath>
+            </File>
+            <File>
+              <FileName>lv_anim.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\lvgl\src\lv_misc\lv_anim.c</FilePath>
+            </File>
+            <File>
+              <FileName>lv_area.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\lvgl\src\lv_misc\lv_area.c</FilePath>
+            </File>
+            <File>
+              <FileName>lv_circ.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\lvgl\src\lv_misc\lv_circ.c</FilePath>
+            </File>
+            <File>
+              <FileName>lv_color.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\lvgl\src\lv_misc\lv_color.c</FilePath>
             </File>
             <File>
               <FileName>lv_fs.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\lvgl\lv_misc\lv_fs.c</FilePath>
+              <FilePath>.\lvgl\src\lv_misc\lv_fs.c</FilePath>
             </File>
             <File>
               <FileName>lv_gc.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\lvgl\lv_misc\lv_gc.c</FilePath>
+              <FilePath>.\lvgl\src\lv_misc\lv_gc.c</FilePath>
             </File>
             <File>
               <FileName>lv_ll.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\lvgl\lv_misc\lv_ll.c</FilePath>
+              <FilePath>.\lvgl\src\lv_misc\lv_ll.c</FilePath>
             </File>
             <File>
               <FileName>lv_log.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\lvgl\lv_misc\lv_log.c</FilePath>
+              <FilePath>.\lvgl\src\lv_misc\lv_log.c</FilePath>
             </File>
             <File>
               <FileName>lv_math.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\lvgl\lv_misc\lv_math.c</FilePath>
+              <FilePath>.\lvgl\src\lv_misc\lv_math.c</FilePath>
             </File>
             <File>
               <FileName>lv_mem.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\lvgl\lv_misc\lv_mem.c</FilePath>
+              <FilePath>.\lvgl\src\lv_misc\lv_mem.c</FilePath>
             </File>
             <File>
               <FileName>lv_task.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\lvgl\lv_misc\lv_task.c</FilePath>
+              <FilePath>.\lvgl\src\lv_misc\lv_task.c</FilePath>
             </File>
             <File>
               <FileName>lv_templ.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\lvgl\lv_misc\lv_templ.c</FilePath>
+              <FilePath>.\lvgl\src\lv_misc\lv_templ.c</FilePath>
             </File>
             <File>
               <FileName>lv_txt.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\lvgl\lv_misc\lv_txt.c</FilePath>
+              <FilePath>.\lvgl\src\lv_misc\lv_txt.c</FilePath>
             </File>
             <File>
-              <FileName>lv_ufs.c</FileName>
+              <FileName>lv_utils.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\lvgl\lv_misc\lv_ufs.c</FilePath>
+              <FilePath>.\lvgl\src\lv_misc\lv_utils.c</FilePath>
             </File>
             <File>
               <FileName>lv_arc.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\lvgl\lv_objx\lv_arc.c</FilePath>
+              <FilePath>.\lvgl\src\lv_objx\lv_arc.c</FilePath>
             </File>
             <File>
               <FileName>lv_bar.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\lvgl\lv_objx\lv_bar.c</FilePath>
+              <FilePath>.\lvgl\src\lv_objx\lv_bar.c</FilePath>
             </File>
             <File>
               <FileName>lv_btn.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\lvgl\lv_objx\lv_btn.c</FilePath>
+              <FilePath>.\lvgl\src\lv_objx\lv_btn.c</FilePath>
             </File>
             <File>
               <FileName>lv_btnm.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\lvgl\lv_objx\lv_btnm.c</FilePath>
+              <FilePath>.\lvgl\src\lv_objx\lv_btnm.c</FilePath>
             </File>
             <File>
               <FileName>lv_calendar.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\lvgl\lv_objx\lv_calendar.c</FilePath>
+              <FilePath>.\lvgl\src\lv_objx\lv_calendar.c</FilePath>
             </File>
             <File>
               <FileName>lv_canvas.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\lvgl\lv_objx\lv_canvas.c</FilePath>
+              <FilePath>.\lvgl\src\lv_objx\lv_canvas.c</FilePath>
             </File>
             <File>
               <FileName>lv_cb.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\lvgl\lv_objx\lv_cb.c</FilePath>
+              <FilePath>.\lvgl\src\lv_objx\lv_cb.c</FilePath>
             </File>
             <File>
               <FileName>lv_chart.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\lvgl\lv_objx\lv_chart.c</FilePath>
+              <FilePath>.\lvgl\src\lv_objx\lv_chart.c</FilePath>
             </File>
             <File>
               <FileName>lv_cont.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\lvgl\lv_objx\lv_cont.c</FilePath>
+              <FilePath>.\lvgl\src\lv_objx\lv_cont.c</FilePath>
             </File>
             <File>
               <FileName>lv_ddlist.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\lvgl\lv_objx\lv_ddlist.c</FilePath>
+              <FilePath>.\lvgl\src\lv_objx\lv_ddlist.c</FilePath>
             </File>
             <File>
               <FileName>lv_gauge.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\lvgl\lv_objx\lv_gauge.c</FilePath>
+              <FilePath>.\lvgl\src\lv_objx\lv_gauge.c</FilePath>
             </File>
             <File>
               <FileName>lv_img.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\lvgl\lv_objx\lv_img.c</FilePath>
+              <FilePath>.\lvgl\src\lv_objx\lv_img.c</FilePath>
             </File>
             <File>
               <FileName>lv_imgbtn.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\lvgl\lv_objx\lv_imgbtn.c</FilePath>
+              <FilePath>.\lvgl\src\lv_objx\lv_imgbtn.c</FilePath>
             </File>
             <File>
               <FileName>lv_kb.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\lvgl\lv_objx\lv_kb.c</FilePath>
+              <FilePath>.\lvgl\src\lv_objx\lv_kb.c</FilePath>
             </File>
             <File>
               <FileName>lv_label.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\lvgl\lv_objx\lv_label.c</FilePath>
+              <FilePath>.\lvgl\src\lv_objx\lv_label.c</FilePath>
             </File>
             <File>
               <FileName>lv_led.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\lvgl\lv_objx\lv_led.c</FilePath>
+              <FilePath>.\lvgl\src\lv_objx\lv_led.c</FilePath>
             </File>
             <File>
               <FileName>lv_line.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\lvgl\lv_objx\lv_line.c</FilePath>
+              <FilePath>.\lvgl\src\lv_objx\lv_line.c</FilePath>
             </File>
             <File>
               <FileName>lv_list.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\lvgl\lv_objx\lv_list.c</FilePath>
+              <FilePath>.\lvgl\src\lv_objx\lv_list.c</FilePath>
             </File>
             <File>
               <FileName>lv_lmeter.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\lvgl\lv_objx\lv_lmeter.c</FilePath>
+              <FilePath>.\lvgl\src\lv_objx\lv_lmeter.c</FilePath>
             </File>
             <File>
               <FileName>lv_mbox.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\lvgl\lv_objx\lv_mbox.c</FilePath>
+              <FilePath>.\lvgl\src\lv_objx\lv_mbox.c</FilePath>
             </File>
             <File>
               <FileName>lv_objx_templ.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\lvgl\lv_objx\lv_objx_templ.c</FilePath>
+              <FilePath>.\lvgl\src\lv_objx\lv_objx_templ.c</FilePath>
             </File>
             <File>
               <FileName>lv_page.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\lvgl\lv_objx\lv_page.c</FilePath>
+              <FilePath>.\lvgl\src\lv_objx\lv_page.c</FilePath>
             </File>
             <File>
               <FileName>lv_preload.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\lvgl\lv_objx\lv_preload.c</FilePath>
+              <FilePath>.\lvgl\src\lv_objx\lv_preload.c</FilePath>
             </File>
             <File>
               <FileName>lv_roller.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\lvgl\lv_objx\lv_roller.c</FilePath>
+              <FilePath>.\lvgl\src\lv_objx\lv_roller.c</FilePath>
             </File>
             <File>
               <FileName>lv_slider.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\lvgl\lv_objx\lv_slider.c</FilePath>
+              <FilePath>.\lvgl\src\lv_objx\lv_slider.c</FilePath>
             </File>
             <File>
               <FileName>lv_spinbox.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\lvgl\lv_objx\lv_spinbox.c</FilePath>
+              <FilePath>.\lvgl\src\lv_objx\lv_spinbox.c</FilePath>
             </File>
             <File>
               <FileName>lv_sw.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\lvgl\lv_objx\lv_sw.c</FilePath>
+              <FilePath>.\lvgl\src\lv_objx\lv_sw.c</FilePath>
             </File>
             <File>
               <FileName>lv_ta.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\lvgl\lv_objx\lv_ta.c</FilePath>
+              <FilePath>.\lvgl\src\lv_objx\lv_ta.c</FilePath>
             </File>
             <File>
               <FileName>lv_table.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\lvgl\lv_objx\lv_table.c</FilePath>
+              <FilePath>.\lvgl\src\lv_objx\lv_table.c</FilePath>
             </File>
             <File>
               <FileName>lv_tabview.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\lvgl\lv_objx\lv_tabview.c</FilePath>
+              <FilePath>.\lvgl\src\lv_objx\lv_tabview.c</FilePath>
             </File>
             <File>
               <FileName>lv_tileview.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\lvgl\lv_objx\lv_tileview.c</FilePath>
+              <FilePath>.\lvgl\src\lv_objx\lv_tileview.c</FilePath>
             </File>
             <File>
               <FileName>lv_win.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\lvgl\lv_objx\lv_win.c</FilePath>
+              <FilePath>.\lvgl\src\lv_objx\lv_win.c</FilePath>
             </File>
             <File>
               <FileName>lv_theme.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\lvgl\lv_themes\lv_theme.c</FilePath>
+              <FilePath>.\lvgl\src\lv_themes\lv_theme.c</FilePath>
             </File>
             <File>
               <FileName>lv_theme_alien.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\lvgl\lv_themes\lv_theme_alien.c</FilePath>
+              <FilePath>.\lvgl\src\lv_themes\lv_theme_alien.c</FilePath>
             </File>
             <File>
               <FileName>lv_theme_default.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\lvgl\lv_themes\lv_theme_default.c</FilePath>
+              <FilePath>.\lvgl\src\lv_themes\lv_theme_default.c</FilePath>
             </File>
             <File>
               <FileName>lv_theme_material.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\lvgl\lv_themes\lv_theme_material.c</FilePath>
+              <FilePath>.\lvgl\src\lv_themes\lv_theme_material.c</FilePath>
             </File>
             <File>
               <FileName>lv_theme_mono.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\lvgl\lv_themes\lv_theme_mono.c</FilePath>
+              <FilePath>.\lvgl\src\lv_themes\lv_theme_mono.c</FilePath>
             </File>
             <File>
               <FileName>lv_theme_nemo.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\lvgl\lv_themes\lv_theme_nemo.c</FilePath>
+              <FilePath>.\lvgl\src\lv_themes\lv_theme_nemo.c</FilePath>
             </File>
             <File>
               <FileName>lv_theme_night.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\lvgl\lv_themes\lv_theme_night.c</FilePath>
+              <FilePath>.\lvgl\src\lv_themes\lv_theme_night.c</FilePath>
             </File>
             <File>
               <FileName>lv_theme_templ.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\lvgl\lv_themes\lv_theme_templ.c</FilePath>
+              <FilePath>.\lvgl\src\lv_themes\lv_theme_templ.c</FilePath>
             </File>
             <File>
               <FileName>lv_theme_zen.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\lvgl\lv_themes\lv_theme_zen.c</FilePath>
+              <FilePath>.\lvgl\src\lv_themes\lv_theme_zen.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -925,14 +865,14 @@
   <RTE>
     <apis/>
     <components>
-      <component Cclass="CMSIS" Cgroup="CORE" Cvendor="ARM" Cversion="5.1.2" condition="ARMv6_7_8-M Device">
-        <package name="CMSIS" schemaVersion="1.3" url="http://www.keil.com/pack/" vendor="ARM" version="5.4.0"/>
+      <component Cclass="CMSIS" Cgroup="CORE" Cvendor="ARM" Cversion="5.2.0" condition="ARMv6_7_8-M Device">
+        <package name="CMSIS" schemaVersion="1.3" url="http://www.keil.com/pack/" vendor="ARM" version="5.5.1"/>
         <targetInfos>
           <targetInfo name="Target 1"/>
         </targetInfos>
       </component>
       <component Cbundle="ARM Compiler" Cclass="Compiler" Cgroup="I/O" Csub="STDOUT" Cvariant="ITM" Cvendor="Keil" Cversion="1.2.0" condition="ARMCC Cortex-M with ITM">
-        <package name="ARM_Compiler" schemaVersion="1.4.9" url="http://www.keil.com/pack/" vendor="Keil" version="1.6.0"/>
+        <package name="ARM_Compiler" schemaVersion="1.4.9" url="http://www.keil.com/pack/" vendor="Keil" version="1.6.1"/>
         <targetInfos>
           <targetInfo name="Target 1"/>
         </targetInfos>

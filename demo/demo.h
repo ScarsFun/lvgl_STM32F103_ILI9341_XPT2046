@@ -18,11 +18,11 @@ extern "C" {
 #include "lvgl.h"
 #include "lv_ex_conf.h"
 #else
-#include "../lvgl/lvgl.h"
+#include "../../../lvgl/lvgl.h"
 #include "lv_ex_conf.h"
 #endif
 
-#if USE_LV_DEMO
+#if LV_USE_DEMO
 
 /*********************
  *      DEFINES
@@ -45,7 +45,7 @@ void demo_create(void);
  *      MACROS
  **********************/
 
-#endif /*USE_LV_DEMO*/
+#endif /*LV_USE_DEMO*/
 
 #ifdef __cplusplus
 } /* extern "C" */
