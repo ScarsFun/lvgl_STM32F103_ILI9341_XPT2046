@@ -1,4 +1,4 @@
 [submodule "lvgl"]
 	path = lvgl
 	url = https://github.com/littlevgl/lvgl.git
-	branch = 135c119
+	branch = fca1a1d434c4dc1fcb4af7fe874291afead66ecc
