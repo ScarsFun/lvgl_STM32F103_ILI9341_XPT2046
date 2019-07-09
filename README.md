@@ -1,5 +1,6 @@
- # ScarsFun LittleVgl demo project
+ # ScarsFun LittleVgl demo project V1.0
 
+ *   LittleVgl V5.3
  *   Custom STM32F103RC breakout Board (72Mhz, 64K ram, 256K Flash) .  
  *   ILI9341 display over SPI with DMA.
  *	 XPT2046 resistive touch panel.                      
