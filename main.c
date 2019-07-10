@@ -1,7 +1,9 @@
 /*----------------------------------------------------------------------------
  *       Simple STM32F103 Demo, using littleVgl:                             *
+ *     																		 *
+ *		 LittleVgl V5.3														 *
  *       Custom STM32F103RC breakout Board (72Mhz, 64K ram, 256K Flash) .    * 
- *       SPL (STM32 Standard Peripheral Libraries).
+ *       SPL (STM32 Standard Peripheral Libraries).							 *
  *       ILI9341 display over SPI with DMA,                                  *
  *       XPT2046 resistive touch panel                                       * 
  *                                                                           * 
@@ -33,7 +35,6 @@
 #include "misc/delay.h"
 #include "XPT2046/XPT2046.h"
 #include "demo/demo.h"
-
 
 int main()
 {
